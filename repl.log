@@ -2,6 +2,8 @@
 > pokedex@1.0.0 dev
 > npx tsc && node dist/main.js
 
-Pokedex> Your command was: charmander
-Pokedex> Your command was: pikachu
-Pokedex> 
+Pokedex> Throwing a Pokeball at squirtle...
+CACHE MISS: https://pokeapi.co/api/v2/pokemon/squirtle
+Pokedex> CACHE ADD: https://pokeapi.co/api/v2/pokemon/squirtle
+squirtle was caught!
+Closing the Pokedex... Goodbye!

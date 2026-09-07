@@ -1,5 +1,10 @@
-import { CLICommand } from "./command.js";
+import { CLICommand } from "./command.js"; import { State } from "./state.js";
 
-export function commandHelp(commands: Record<string, CLICommand>) {
-  console.log("Welcome to the Pokedex!\n Usage:\n help: Displays a help message\n exit: Exit the Pokedex")
+export async function commandHelp(state: State) {
+  console.log("Welcome to the Pokedex!");
+  console.log("Usage:");
+
+  for (const [name, command] of Object.entries(state.commands)) {
+    console.log(`${name}: ${command.description}`);
+  }
 }
